@@ -24,7 +24,7 @@ rule get_haplogroup:
     input: "{sample}.cns.fq.fasta"
     output: "{sample}.haplogroup.txt"
     params: sge_opts="-l mfree=1G,h_rt=2:00:00 -N get_haplo -cwd"
-    shell: "module load modules modules-init modules-gs && module load python/2.7.2 && export PYTHONPATH=$PYTHONPATH:~tychele/lib/python2.7/site-packages/ && python mito_master_api.py {input} > {output}"
+    shell: "module load modules modules-init modules-gs && module load python/2.7.2 && export PYTHONPATH=$PYTHONPATH:~/lib/python2.7/site-packages/ && python mito_master_api.py {input} > {output}"
 
 rule make_fasta_from_fastq:
     input: "{sample}.cns.fq"
