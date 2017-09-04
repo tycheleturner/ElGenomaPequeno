@@ -1,5 +1,5 @@
 {
-  "reference": "/path/to/GRCh38_full_analysis_set_plus_decoy_hla.fa",
+  "reference": "/path/to/reference.fa",
   "data_dir": "/path/to/bamOrCram/files/",
   "file_tail": ".final.cram",
   "picard": "/path/to/picard-tools-2.5.0/picard.jar",
