@@ -1,0 +1,50 @@
+import os
+
+#author: Tychele N. Turner, Ph.D.
+#email: tycheleturner@gmail.com
+
+if config == {}:
+    configfile: "../config.json"
+
+MITOBAM_DIR = config["mitobam_dir"]
+REFERENCE = config["reference"]
+
+SAMPLES = []
+for file in os.listdir(MITOBAM_DIR):
+    if file.endswith(".MT.clean.name.bam"):
+        SAMPLES.append(str(file).split('.MT.clean.name.bam')[0])
+
+print(SAMPLES)
+
+rule all:
+    input: expand("%s/{sample}.MT.clean.name.bam" % MITOBAM_DIR, sample = SAMPLES), expand("{sample}.cns.fq", sample = SAMPLES), expand("{sample}.cns.fq.fasta", sample = SAMPLES), expand("{sample}.haplogroup.txt", sample = SAMPLES)
+    params: sge_opts="-l mfree=20G -N run_all" 
+
+rule get_haplogroup:
+    input: "{sample}.cns.fq.fasta"
+    output: "{sample}.haplogroup.txt"
+    params: sge_opts="-l mfree=1G,h_rt=2:00:00 -N get_haplo -cwd"
+    shell: "module load modules modules-init modules-gs && module load python/2.7.2 && export PYTHONPATH=$PYTHONPATH:~tychele/lib/python2.7/site-packages/ && python mito_master_api.py {input} > {output}"
+
+rule make_fasta_from_fastq:
+    input: "{sample}.cns.fq"
+    output: "{sample}.cns.fq.fasta"
+    params: sge_opts="-l mfree=1G,h_rt=2:00:00 -N make_fasta_from_fastq -cwd"
+    shell: "touch {output}; python convert_fastq_to_fasta.py {input}"
+
+rule make_consensus_file:
+   input: "%s/{sample}.MT.clean.name.bam"%MITOBAM_DIR
+   output: "{sample}.cns.fq"
+   params: sge_opts="-l mfree=1G,h_rt=2:00:00 -N make_consensus_file -cwd"
+   shell: "module load modules modules-init modules-gs && module load bcftools/1.3.1 && module load samtools/1.3 && samtools mpileup -uf {REFERENCE} {input} | bcftools call -c | vcfutils.pl vcf2fq > {output}"
+
+rule clean:
+    shell: """
+    rm *fq
+    sh summary_haplogroups.sh
+    module load modules modules-init modules-gs && module load R/3.0.0
+    Rscript get_all_fasta_with_sample_name.R
+    sh get_input_for_maps.sh
+    rm *.cns.fq.fasta
+    """
+

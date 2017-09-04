@@ -1,0 +1,19 @@
+Haplogroups	coordinate1	coordinate2	continent	color
+A	-99	40	North American	slateblue1
+B	-100	39	North American	slateblue2
+C	-98	41	North American	slateblue3
+D	-101	38	North American	slateblue4
+F	101	22	Asian	darkgreen
+G	111	33	Asian	green4
+H	5	52	European	blue4
+I	6	53	European	blue2
+J	7	54	European	dodgerblue1
+K	8	55	European	deepskyblue2
+L	26	-10	Africa	firebrick4
+M	47	22	Africa	firebrick3
+N	30	28	Africa	firebrick2
+T	4	51	European	lightskyblue
+U	3	50	European	navy
+V	2	49	European	royalblue1
+W	1	48	European	royalblue4
+X	0	47	European	steelblue1
