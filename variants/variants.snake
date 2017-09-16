@@ -23,7 +23,7 @@ rule all:
 rule parse_pysamstats:
     input: "{sample}.pysamstats"
     output: "{sample}.pysamstats.variants.txt", "{sample}.pysamstats.heteroplasmy.txt"
-    params: sge_opts="-l mfree=20G -N pileup_counts -cwd"
+    params: sge_opts="-l mfree=20G,h_rt=1:00:00 -N pileup_counts -cwd"
     shell: """
     module load hdf5/1.8.13
     module load netcdf/4.3.2    
@@ -34,7 +34,7 @@ rule parse_pysamstats:
 rule pysamstats:
     input: "%s/{sample}.MT.clean.name.bam"%MITOBAM_DIR
     output: "{sample}.pysamstats"
-    params: sge_opts="-l mfree=20G -N pysamstats -cwd"
+    params: sge_opts="-l mfree=20G,h_rt=1:00:00 -N pysamstats -cwd"
     shell: """    
     
     module load python/2.7.3
@@ -46,7 +46,7 @@ rule pysamstats:
 rule mpileup:
     input: "%s/{sample}.MT.clean.name.bam" % MITOBAM_DIR
     output: "{sample}.mpileup"
-    params: sge_opts="-l mfree=1G,h_rt=2:00:00 -N mpileup -cwd"
+    params: sge_opts="-l mfree=1G,h_rt=1:00:00 -N mpileup -cwd"
     shell: """
     module load samtools/0.1.19 && samtools mpileup -f {REFERENCE} {input} > {output}
     """

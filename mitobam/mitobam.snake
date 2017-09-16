@@ -26,14 +26,14 @@ rule all:
 rule reaheader_bam:
     input: "{sample}.MT.clean.bam"
     output: "{sample}.MT.clean.name.bam"
-    params: prefix="{sample}", sge_opts="-l mfree=1G,h_rt=2:00:00 -N rename -cwd"
+    params: prefix="{sample}", sge_opts="-l mfree=1G,h_rt=1:00:00 -N rename -cwd"
     shell: "{JAVA} -jar {PICARD} AddOrReplaceReadGroups INPUT={input} OUTPUT={output} SORT_ORDER=coordinate RGID={params.prefix} RGLB={params.prefix} RGPL=illumina RGPU={params.prefix} RGSM={params.prefix} CREATE_INDEX=true"
 
 rule index_bam:
     input: "{sample}.MT.clean.bam"
     output: "{sample}.MT.clean.bam.bai"
     benchmark: "{sample}.index.bam.benchmark"
-    params: sge_opts="-l mfree=1G -N index_bam -cwd"
+    params: sge_opts="-l mfree=1G,h_rt=1:00:00 -N index_bam -cwd"
     shell: """
     module load modules modules-init modules-gs
     module load samtools/1.4
@@ -44,7 +44,7 @@ rule convert_to_bam:
     input: "{sample}.MT.clean.sam"
     output: "{sample}.MT.clean.bam"
     benchmark: "{sample}.convert.to.bam.benchmark"
-    params: sge_opts="-l mfree=2G -N convert_to_bam -cwd"
+    params: sge_opts="-l mfree=2G,h_rt=1:00:00 -N convert_to_bam -cwd"
     shell: """
     module load modules modules-init modules-gs
     module load samtools/1.4
@@ -55,7 +55,7 @@ rule filter_on_greater_than_10_percent_mismatch:
     input: "{sample}.MT.sam"
     output: "{sample}.MT.clean.sam"
     benchmark: "{sample}.filter.mito.benchmark"
-    params: sge_opts="-l mfree=1G -N filter_on_greater_than_10_percent_mismatch -cwd"
+    params: sge_opts="-l mfree=1G,h_rt=1:00:00 -N filter_on_greater_than_10_percent_mismatch -cwd"
     shell: """
     egrep -w 'NM:i:1||NM:i:2||NM:i:3||NM:i:4||NM:i:5||NM:i:6||NM:i:7||NM:i:8||NM:i:9||NM:i:10||NM:i:11||NM:i:12||NM:i:13||NM:i:14||' {input} | grep -v 'NNNNNNNNNN' > {output}
     """
@@ -64,7 +64,7 @@ rule extract_mitochondria:
     input: "%s/{sample}%s"%(DATA_DIR,FILE_TAIL)
     output: "{sample}.MT.sam"
     benchmark: "{sample}.extract.mito.benchmark"
-    params: sge_opts="-l mfree=1G -N extract_mitochondria -cwd"
+    params: sge_opts="-l mfree=1G,h_rt=1:00:00 -N extract_mitochondria -cwd"
     shell: """
     module load modules modules-init modules-gs
     module load samtools/1.4
