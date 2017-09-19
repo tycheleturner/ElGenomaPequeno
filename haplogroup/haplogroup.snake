@@ -30,7 +30,7 @@ rule make_fasta_from_fastq:
     input: "{sample}.cns.fq"
     output: "{sample}.cns.fq.fasta"
     params: sge_opts="-l mfree=1G,h_rt=1:00:00 -N make_fasta_from_fastq -cwd"
-    shell: "touch {output}; python convert_fastq_to_fasta.py {input}"
+    shell: "touch {output}; module load modules modules-init modules-gs && module load python/2.7.2 && export PYTHONPATH=$PYTHONPATH:~tychele/lib/python2.7/site-packages/ && python convert_fastq_to_fasta.py {input}"
 
 rule make_consensus_file:
    input: "%s/{sample}.MT.clean.name.bam"%MITOBAM_DIR
