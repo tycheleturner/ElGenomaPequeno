@@ -43,7 +43,7 @@ putativeVariants <- inputfile[which(inputfile$percentRef < threshold),]
 pptest <- putativeVariants[,c(24:30)]
 putativeVariants$mostCommon <- as.character(sapply(colnames(pptest)[apply(pptest,1,which.max)], function(x) strsplit(x, "percent")[[1]][2]))
 
-#calculate precent alternate
+#calculate percent alternate
 for(i in 1:nrow(putativeVariants)){
 	putativeVariants$percentAlternate[i] <- putativeVariants[i,paste("percent",putativeVariants$mostCommon[i], sep="")]
 }
@@ -51,8 +51,10 @@ for(i in 1:nrow(putativeVariants)){
 #clean and output
 vars <- putativeVariants[,c("chrom", "pos", "ref", "mostCommon", "percentRef", "percentAlternate", "reads_pp")]
 colnames(vars) <- c("CHROM", "POS", "REF", "ALT", "PERCENTREF", "PERCENTALT", "DEPTH")
+vars2 <- vars
+vars <- vars[which(as.character(vars$REF) != as.character(vars$ALT)),]
 write.table(vars, file=outputmutations, sep="\t", quote=F, row.names=F) 
-potentialHeteroplasmy <- inputfile[which(inputfile$pos %in% vars[which(vars$PERCENTALT < threshold),]$POS),]
+potentialHeteroplasmy <- inputfile[which(inputfile$pos %in% vars2[which(vars2$PERCENTALT < threshold),]$POS),]
 pptest2 <- potentialHeteroplasmy[c("percentA", "percentC", "percentG", "percentT", "percentdeletions", "percentinsertions")]
 
 #second highest
