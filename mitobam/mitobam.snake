@@ -23,7 +23,7 @@ rule all:
     input: expand("%s/{sample}%s"%(DATA_DIR,FILE_TAIL), sample = SAMPLES), expand("{sample}.MT.sam", sample = SAMPLES), expand("{sample}.MT.clean.sam", sample = SAMPLES), expand("{sample}.MT.clean.bam", sample = SAMPLES), expand("{sample}.MT.clean.bam.bai", sample = SAMPLES), expand("{sample}.MT.clean.name.bam", sample = SAMPLES)
     params: sge_opts="-l mfree=20G -N run_all"
 
-rule reaheader_bam:
+rule reheader_bam:
     input: "{sample}.MT.clean.bam"
     output: "{sample}.MT.clean.name.bam"
     params: prefix="{sample}", sge_opts="-l mfree=1G,h_rt=2:00:00 -N rename -cwd"
