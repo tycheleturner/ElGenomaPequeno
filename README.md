@@ -160,7 +160,8 @@ sh run_analysis.sh
 ### Workflows inside of this github
 
 ![Mitobam workflow](https://raw.githubusercontent.com/tycheleturner/ElGenomaPequeno/master/mitobam/mitobam.pdf)
-
+![Haplogroup workflow](https://raw.githubusercontent.com/tycheleturner/ElGenomaPequeno/master/haplogroup/haplogroup.pdf)
+![Variants workflow](https://raw.githubusercontent.com/tycheleturner/ElGenomaPequeno/master/variants/variants.pdf)
 
 
 
