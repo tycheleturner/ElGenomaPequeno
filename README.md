@@ -6,19 +6,13 @@ The mitochondrial workflows in this github have a few purposes. First is to get 
 Requirements:
 ```
 
-samtools/0.1.19
-python/2.7.3
-pysam/0.8.4
-pysamstats/0.24.2
-hdf5/1.8.13
-netcdf/4.3.2
-R/3.1.0
-samtools/1.4
-bcftools/1.3.1
-samtools/1.3
-python/2.7.2
-picard-tools-2.5.0
-jre1.8.0_65
+samtools
+python
+pysam
+pysamstats
+R
+bcftools
+picard
 R package: seqinr
 R package: optparse
 Python package: biopython
