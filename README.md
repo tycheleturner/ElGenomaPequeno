@@ -70,3 +70,96 @@ map/haplogroup_map.pdf : A world map with all of the samples
 
 ```
 
+### Example setup on a RedHat Linux (may need to ask an system administrator for help if running on your server or alternatively you can set this up in the cloud on a RedHat instance)
+
+```
+#update machine
+sudo yum -y update
+
+#install basics
+sudo yum -y install gcc
+sudo yum -y install zlib-devel
+sudo yum -y install bzip2-devel
+sudo yum -y install xz-devel
+sudo yum -y install gcc-c++
+sudo yum -y install wget
+sudo yum -y install bzip2
+
+#get anaconda and install
+wget https://repo.continuum.io/archive/Anaconda2-5.0.1-Linux-x86_64.sh
+sh Anaconda2-5.0.1-Linux-x86_64.sh
+source ~/.bashrc
+
+#install required for the softwre
+conda install -c bioconda samtools
+conda install -c bioconda R
+conda install -c bioconda pysam
+conda install -c bioconda pysamstats
+conda install -c bioconda hdf5
+conda install -c bioconda bcftools
+conda install -c bioconda picard
+conda install -c bioconda biopython
+
+conda create -n py35 python=3.5 anaconda
+source activate py35
+conda install -c bioconda snakemake
+
+#inside of R install the following
+install.packages('seqinr')
+install.packages('optparse')
+install.packages('maps')
+
+#install git
+sudo yum -y install git
+
+#testing
+git clone https://github.com/tycheleturner/ElGenomaPequeno.git
+source activate py35
+conda install -c bioconda biopython
+conda install pip
+
+source deactivate py35
+pip install poster
+source activate py35
+```
+
+### Example analysis with data from 1000 Genomes
+
+```
+#get the data (low pass WGS)
+wget ftp://ftp-trace.ncbi.nih.gov/1000genomes/ftp/phase3/data/NA19238/alignment/NA19238.mapped.ILLUMINA.bwa.YRI.low_coverage.20130415.bam.cram
+
+wget ftp://ftp-trace.ncbi.nih.gov/1000genomes/ftp/phase3/data/NA19240/alignment/NA19240.mapped.ILLUMINA.bwa.YRI.low_coverage.20130415.bam.cram
+
+wget ftp://ftp-trace.ncbi.nih.gov/1000genomes/ftp/phase3/data/NA19239/alignment/NA19239.mapped.ILLUMINA.bwa.YRI.low_coverage.20130415.bam.cram
+
+#index crams
+for file in *cram
+do
+samtools index "$file"
+done
+
+#get reference files
+wget http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/human_g1k_v37.fasta.gz
+gunzip human_g1k_v37.fasta.gz
+wget http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/human_g1k_v37.fasta.fai
+
+cd ElGenomaPequeno
+{
+  "reference": "/home/ec2-user/human_g1k_v37.fasta",
+  "data_dir": "/home/ec2-user/",
+  "file_tail": ".mapped.ILLUMINA.bwa.YRI.low_coverage.20130415.bam.cram",
+  "picard": "picard",
+  "java": "java",
+  "mitoname": "MT",
+  "mitobam_dir": "../mitobam/",
+  "mito_ref": "../reference/MT.fasta",
+  "heteroplasmy_threshold": "15"
+}
+
+sh run_analysis.sh
+
+```
+
+
+
