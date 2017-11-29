@@ -140,7 +140,7 @@ wget http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/human_g1k_v37
 
 cd ElGenomaPequeno
 
-#update config.json as follows:
+#update config.json as follows (if running in the cloud):
 {
   "reference": "/home/ec2-user/human_g1k_v37.fasta",
   "data_dir": "/home/ec2-user/",
@@ -156,6 +156,11 @@ cd ElGenomaPequeno
 sh run_analysis.sh
 
 ```
+
+### Workflows inside of this github
+
+![Mitobam workflow](https://raw.githubusercontent.com/tycheleturner/ElGenomaPequeno/master/mitobam/mitobam.pdf)
+
 
 
 
