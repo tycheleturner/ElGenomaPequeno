@@ -1,0 +1,36 @@
+query	tpos	qpos	tnt	qnt	ntchange	allele	calc_locus	calc_aachange	conservation	haplogroup	verbose_haplogroup	patientphenotype	mmutid	rtmutid	polyid	subvar_cnt	is_polymorphism	is_mmut	is_rtmut	is_submitted	gb_cnt	gb_perc	hap_cnt	hap_perc
+MT	73	73	A	G	transition		ATT<br>D-Loop<br>7S DNA<br>HVS2	non-coding		L3e	L3e2b5		0	0	14	4	true	false	false	true	27813	74.08	489	94.77
+MT	150	150	C	T	transition	C150T	ATT<br>OH<br>D-Loop<br>7S DNA<br>HVS2	non-coding		L3e	L3e2b5	Longevity / Cervical Carcinoma / HPV infection risk	166	0	34	1	true	true	false	true	4693	12.50	492	95.35
+MT	152	152	T	C	transition		ATT<br>OH<br>D-Loop<br>7S DNA<br>HVS2	non-coding		L3e	L3e2b5		0	0	36	1	true	false	false	true	9925	26.43	110	21.32
+MT	195	195	T	C	transition	T195C	ATT<br>OH<br>D-Loop<br>HVS2	non-coding		L3e	L3e2b5	BD-associated / melanoma pts	206	0	54	1	true	true	false	true	7262	19.34	255	49.42
+MT	263	263	A	G	transition		ATT<br>OH<br>D-Loop<br>HVS2	non-coding		L3e	L3e2b5		0	0	87	3	true	false	false	true	35393	94.27	492	95.35
+MT	750	750	A	G	transition		12S	rRNA	97.78%	L3e	L3e2b5		0	0	437	11	true	false	false	true	36874	98.21	388	75.19
+MT	1438	1438	A	G	transition		12S	rRNA	86.67%	L3e	L3e2b5		0	0	469	12	true	false	false	true	35605	94.83	511	99.03
+MT	2352	2352	T	C	transition	T2352C	16S	rRNA	8.89%	L3e	L3e2b5	Possibly LVNC-associated	0	202	500	1	true	false	true	true	849	2.26	515	99.81
+MT	2706	2706	A	G	transition		16S	rRNA	84.44%	L3e	L3e2b5		0	0	508	4	true	false	false	true	29096	77.50	516	100.00
+MT	4769	4769	A	G	transition		ND2	<div style='white-space:nowrap;'>ND2:M=>M</div>	24.44%	L3e	L3e2b5		0	0	607	3	true	false	false	true	36626	97.55	516	100.00
+MT	6261	6261	G	A	transition	G6261A	COI	<div style='white-space:nowrap;'>COI:A=>T</div>	97.78%	L3e	L3e2b5	Prostate Cancer / LHON	98	0	2075	1	true	true	false	true	253	0.67	16	3.10
+MT	7028	7028	C	T	transition		COI	<div style='white-space:nowrap;'>COI:A=>A</div>	100.00%	L3e	L3e2b5		0	0	700	2	true	false	false	true	29617	78.88	514	99.61
+MT	8701	8701	A	G	transition		ATPase6	<div style='white-space:nowrap;'>ATPase6:T=>A</div>	42.22%	L3e	L3e2b5		0	0	797	2	true	false	false	true	11616	30.94	512	99.22
+MT	8860	8860	A	G	transition		ATPase6	<div style='white-space:nowrap;'>ATPase6:T=>A</div>	71.11%	L3e	L3e2b5		0	0	806	6	true	false	false	true	36990	98.52	512	99.22
+MT	8999	8999	T	C	transition		ATPase6	<div style='white-space:nowrap;'>ATPase6:V=>A</div>	97.78%	L3e	L3e2b5		0	0	4576	0	true	false	false	false	7	0.02	0	0.00
+MT	9540	9540	T	C	transition		COIII	<div style='white-space:nowrap;'>COIII:L=>L</div>	97.78%	L3e	L3e2b5		0	0	840	1	true	false	false	true	11632	30.98	515	99.81
+MT	10398	10398	A	G	transition	A10398G	ND3	<div style='white-space:nowrap;'>ND3:T=>A</div>	51.11%	L3e	L3e2b5	PD protective factor / longevity / altered cell pH / metabolic syndrome / breast cancer risk / ADHD	165	0	897	2	true	true	false	true	16049	42.75	465	90.12
+MT	10819	10819	A	G	transition		ND4	<div style='white-space:nowrap;'>ND4:K=>K</div>	28.89%	L3e	L3e2b5		0	0	923	1	true	false	false	true	682	1.82	511	99.03
+MT	10873	10873	T	C	transition		ND4	<div style='white-space:nowrap;'>ND4:P=>P</div>	20.00%	L3e	L3e2b5		0	0	926	3	true	false	false	true	11614	30.93	515	99.81
+MT	11719	11719	G	A	transition		ND4	<div style='white-space:nowrap;'>ND4:G=>G</div>	97.78%	L3e	L3e2b5		0	0	975	3	true	false	false	true	28290	75.35	515	99.81
+MT	12705	12705	C	T	transition		ND5	<div style='white-space:nowrap;'>ND5:I=>I</div>	28.89%	L3e	L3e2b5		0	0	1031	3	true	false	false	true	14802	39.42	516	100.00
+MT	13015	13015	T	C	transition		ND5	<div style='white-space:nowrap;'>ND5:L=>L</div>	15.56%	L3e	L3e2b5		0	0	1524	1	true	false	false	true	36	0.10	0	0.00
+MT	14212	14212	T	C	transition		ND6	<div style='white-space:nowrap;'>ND6:V=>V</div>	53.33%	L3e	L3e2b5		0	0	1132	1	true	false	false	true	600	1.60	513	99.42
+MT	14766	14766	C	T	transition		Cytb	<div style='white-space:nowrap;'>Cytb:T=>I</div>	48.89%	L3e	L3e2b5		0	0	1172	2	true	false	false	true	28221	75.17	516	100.00
+MT	14905	14905	G	A	transition		Cytb	<div style='white-space:nowrap;'>Cytb:M=>M</div>	100.00%	L3e	L3e2b5		0	0	1185	2	true	false	false	true	2084	5.55	161	31.20
+MT	15301	15301	G	A	transition		Cytb	<div style='white-space:nowrap;'>Cytb:L=>L</div>	95.56%	L3e	L3e2b5		0	0	1215	1	true	false	false	true	9922	26.43	514	99.61
+MT	15326	15326	A	G	transition		Cytb	<div style='white-space:nowrap;'>Cytb:T=>A</div>	17.78%	L3e	L3e2b5		0	0	1219	2	true	false	false	true	36960	98.44	515	99.81
+MT	16172	16172	T	C	transition		ATT<br>D-Loop<br>TAS<br>HVS1<br>7S DNA	non-coding		L3e	L3e2b5		0	0	229	1	true	false	false	true	2718	7.24	113	21.90
+MT	16183	16183	A	C	transversion	A16183C	ATT<br>D-Loop<br>HVS1<br>7S DNA	non-coding		L3e	L3e2b5	Melanoma patients	296	0	4528	0	true	true	false	false	4535	12.08	76	14.73
+MT	16189	16189	T	C	transition	T16189C	ATT<br>D-Loop<br>HVS1<br>7S DNA	non-coding		L3e	L3e2b5	Diabetes / Cardiomyopathy / Endometrial cancer risk / mtDNA copy nbr / Metabolic Syndrome / Melanoma patients	76	0	254	1	true	true	false	true	9210	24.53	132	25.58
+MT	16223	16223	C	T	transition		ATT<br>D-Loop<br>HVS1<br>7S DNA	non-coding		L3e	L3e2b5		0	0	287	3	true	false	false	true	13941	37.13	484	93.80
+MT	16293	16293	A	T	transversion		ATT<br>D-Loop<br>HVS1<br>7S DNA	non-coding		L3e	L3e2b5		0	0	1463	1	true	false	false	true	62	0.17	2	0.39
+MT	16320	16320	C	T	transition		ATT<br>D-Loop<br>HVS1<br>7S DNA	non-coding		L3e	L3e2b5		0	0	385	1	true	false	false	true	918	2.45	153	29.65
+MT	16519	16519	T	C	transition		ATT<br>D-Loop<br>7S DNA	non-coding		L3e	L3e2b5		0	0	432	3	true	false	false	true	23467	62.50	292	56.59
+

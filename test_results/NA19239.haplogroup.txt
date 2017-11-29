@@ -1,0 +1,58 @@
+query	tpos	qpos	tnt	qnt	ntchange	allele	calc_locus	calc_aachange	conservation	haplogroup	verbose_haplogroup	patientphenotype	mmutid	rtmutid	polyid	subvar_cnt	is_polymorphism	is_mmut	is_rtmut	is_submitted	gb_cnt	gb_perc	hap_cnt	hap_perc
+MT	73	73	A	G	transition		ATT<br>D-Loop<br>7S DNA<br>HVS2	non-coding		L2a	L2a1p		0	0	14	4	true	false	false	true	27813	74.08	666	94.60
+MT	143	143	G	A	transition		ATT<br>OH<br>D-Loop<br>7S DNA<br>HVS2	non-coding		L2a	L2a1p		0	0	32	1	true	false	false	true	757	2.02	286	40.63
+MT	146	146	T	C	transition		ATT<br>OH<br>D-Loop<br>7S DNA<br>HVS2	non-coding		L2a	L2a1p		0	0	33	2	true	false	false	true	6846	18.23	602	85.51
+MT	152	152	T	C	transition		ATT<br>OH<br>D-Loop<br>7S DNA<br>HVS2	non-coding		L2a	L2a1p		0	0	36	1	true	false	false	true	9925	26.43	651	92.47
+MT	195	195	T	C	transition	T195C	ATT<br>OH<br>D-Loop<br>HVS2	non-coding		L2a	L2a1p	BD-associated / melanoma pts	206	0	54	1	true	true	false	true	7262	19.34	617	87.64
+MT	263	263	A	G	transition		ATT<br>OH<br>D-Loop<br>HVS2	non-coding		L2a	L2a1p		0	0	87	3	true	false	false	true	35393	94.27	666	94.60
+MT	750	750	A	G	transition		12S	rRNA	97.78%	L2a	L2a1p		0	0	437	11	true	false	false	true	36874	98.21	704	100.00
+MT	769	769	G	A	transition		12S	rRNA	15.56%	L2a	L2a1p		0	0	439	1	true	false	false	true	2856	7.61	703	99.86
+MT	1018	1018	G	A	transition		12S	rRNA	8.89%	L2a	L2a1p		0	0	450	2	true	false	false	true	2848	7.59	703	99.86
+MT	1438	1438	A	G	transition		12S	rRNA	86.67%	L2a	L2a1p		0	0	469	12	true	false	false	true	35605	94.83	701	99.57
+MT	2416	2416	T	C	transition		16S	rRNA	24.44%	L2a	L2a1p		0	0	2227	1	true	false	false	true	1164	3.10	701	99.57
+MT	2706	2706	A	G	transition		16S	rRNA	84.44%	L2a	L2a1p		0	0	508	4	true	false	false	true	29096	77.50	702	99.72
+MT	2789	2789	C	T	transition		16S	rRNA	37.78%	L2a	L2a1p		0	0	1279	1	true	false	false	true	691	1.84	674	95.74
+MT	3594	3594	C	T	transition		ND1	<div style='white-space:nowrap;'>ND1:V=>V</div>	20.00%	L2a	L2a1p		0	0	1345	3	true	false	false	true	2769	7.38	702	99.72
+MT	4104	4104	A	G	transition		ND1	<div style='white-space:nowrap;'>ND1:L=>L</div>	95.56%	L2a	L2a1p		0	0	1489	3	true	false	false	true	2746	7.31	698	99.15
+MT	4767	4767	A	G	transition		ND2	<div style='white-space:nowrap;'>ND2:M=>V</div>	24.44%	L2a	L2a1p		0	0	3195	1	true	false	false	true	109	0.29	0	0.00
+MT	4769	4769	A	G	transition		ND2	<div style='white-space:nowrap;'>ND2:M=>M</div>	24.44%	L2a	L2a1p		0	0	607	3	true	false	false	true	36626	97.55	703	99.86
+MT	7028	7028	C	T	transition		COI	<div style='white-space:nowrap;'>COI:A=>A</div>	100.00%	L2a	L2a1p		0	0	700	2	true	false	false	true	29617	78.88	702	99.72
+MT	7175	7175	T	C	transition		COI	<div style='white-space:nowrap;'>COI:T=>T</div>	100.00%	L2a	L2a1p		0	0	705	2	true	false	false	true	717	1.91	703	99.86
+MT	7256	7256	C	T	transition		COI	<div style='white-space:nowrap;'>COI:N=>N</div>	100.00%	L2a	L2a1p		0	0	712	2	true	false	false	true	2739	7.30	692	98.30
+MT	7274	7274	C	T	transition		COI	<div style='white-space:nowrap;'>COI:G=>G</div>	100.00%	L2a	L2a1p		0	0	713	2	true	false	false	true	681	1.81	679	96.45
+MT	7300	7300	T	C	transition		COI	<div style='white-space:nowrap;'>COI:M=>T</div>	64.44%	L2a	L2a1p		0	0	5787	0	true	false	false	false	0	0.00	0	0.00
+MT	7521	7521	G	A	transition		D	MitoTIP 0.50%	33.33%	L2a	L2a1p		0	0	721	1	true	false	false	true	2893	7.71	701	99.57
+MT	7771	7771	A	G	transition		COII	<div style='white-space:nowrap;'>COII:E=>E</div>	100.00%	L2a	L2a1p		0	0	735	2	true	false	false	true	723	1.93	681	96.73
+MT	8206	8206	G	A	transition		COII	<div style='white-space:nowrap;'>COII:M=>M</div>	100.00%	L2a	L2a1p		0	0	758	2	true	false	false	true	975	2.60	697	99.01
+MT	8701	8701	A	G	transition		ATPase6	<div style='white-space:nowrap;'>ATPase6:T=>A</div>	42.22%	L2a	L2a1p		0	0	797	2	true	false	false	true	11616	30.94	701	99.57
+MT	8860	8860	A	G	transition		ATPase6	<div style='white-space:nowrap;'>ATPase6:T=>A</div>	71.11%	L2a	L2a1p		0	0	806	6	true	false	false	true	36990	98.52	704	100.00
+MT	8869	8869	A	G	transition		ATPase6	<div style='white-space:nowrap;'>ATPase6:M=>V</div>	33.33%	L2a	L2a1p		0	0	807	0	true	false	false	false	110	0.29	1	0.14
+MT	9221	9221	A	G	transition		COIII	<div style='white-space:nowrap;'>COIII:S=>S</div>	15.56%	L2a	L2a1p		0	0	827	1	true	false	false	true	937	2.50	699	99.29
+MT	9410	9410	A	G	transition		COIII	<div style='white-space:nowrap;'>COIII:Q=>Q</div>	97.78%	L2a	L2a1p		0	0	3712	1	true	false	false	true	24	0.06	2	0.28
+MT	9540	9540	T	C	transition		COIII	<div style='white-space:nowrap;'>COIII:L=>L</div>	97.78%	L2a	L2a1p		0	0	840	1	true	false	false	true	11632	30.98	703	99.86
+MT	10115	10115	T	C	transition		ND3	<div style='white-space:nowrap;'>ND3:I=>I</div>	24.44%	L2a	L2a1p		0	0	874	2	true	false	false	true	940	2.50	702	99.72
+MT	10398	10398	A	G	transition	A10398G	ND3	<div style='white-space:nowrap;'>ND3:T=>A</div>	51.11%	L2a	L2a1p	PD protective factor / longevity / altered cell pH / metabolic syndrome / breast cancer risk / ADHD	165	0	897	2	true	true	false	true	16049	42.75	702	99.72
+MT	10873	10873	T	C	transition		ND4	<div style='white-space:nowrap;'>ND4:P=>P</div>	20.00%	L2a	L2a1p		0	0	926	3	true	false	false	true	11614	30.93	703	99.86
+MT	11719	11719	G	A	transition		ND4	<div style='white-space:nowrap;'>ND4:G=>G</div>	97.78%	L2a	L2a1p		0	0	975	3	true	false	false	true	28290	75.35	704	100.00
+MT	11914	11914	G	A	transition		ND4	<div style='white-space:nowrap;'>ND4:T=>T</div>	20.00%	L2a	L2a1p		0	0	986	2	true	false	false	true	3851	10.26	681	96.73
+MT	11944	11944	T	C	transition		ND4	<div style='white-space:nowrap;'>ND4:L=>L</div>	93.33%	L2a	L2a1p		0	0	987	1	true	false	false	true	1166	3.11	702	99.72
+MT	12693	12693	A	G	transition		ND5	<div style='white-space:nowrap;'>ND5:K=>K</div>	93.33%	L2a	L2a1p		0	0	1029	1	true	false	false	true	633	1.69	629	89.35
+MT	12705	12705	C	T	transition		ND5	<div style='white-space:nowrap;'>ND5:I=>I</div>	28.89%	L2a	L2a1p		0	0	1031	3	true	false	false	true	14802	39.42	704	100.00
+MT	13590	13590	G	A	transition		ND5	<div style='white-space:nowrap;'>ND5:L=>L</div>	68.89%	L2a	L2a1p		0	0	1079	1	true	false	false	true	1847	4.92	702	99.72
+MT	13650	13650	C	T	transition		ND5	<div style='white-space:nowrap;'>ND5:P=>P</div>	51.11%	L2a	L2a1p		0	0	1084	1	true	false	false	true	2771	7.38	700	99.43
+MT	13803	13803	A	G	transition		ND5	<div style='white-space:nowrap;'>ND5:T=>T</div>	60.00%	L2a	L2a1p		0	0	1098	1	true	false	false	true	689	1.84	678	96.31
+MT	13818	13818	T	C	transition		ND5	<div style='white-space:nowrap;'>ND5:T=>T</div>	93.33%	L2a	L2a1p		0	0	2374	0	true	false	false	false	27	0.07	2	0.28
+MT	14560	14560	G	A	transition		ND6	<div style='white-space:nowrap;'>ND6:V=>V</div>	64.44%	L2a	L2a1p		0	0	1156	1	true	false	false	true	930	2.48	0	0.00
+MT	14566	14566	A	G	transition		ND6	<div style='white-space:nowrap;'>ND6:G=>G</div>	88.89%	L2a	L2a1p		0	0	1159	1	true	false	false	true	675	1.80	668	94.89
+MT	14766	14766	C	T	transition		Cytb	<div style='white-space:nowrap;'>Cytb:T=>I</div>	48.89%	L2a	L2a1p		0	0	1172	2	true	false	false	true	28221	75.17	703	99.86
+MT	15301	15301	G	A	transition		Cytb	<div style='white-space:nowrap;'>Cytb:L=>L</div>	95.56%	L2a	L2a1p		0	0	1215	1	true	false	false	true	9922	26.43	702	99.72
+MT	15326	15326	A	G	transition		Cytb	<div style='white-space:nowrap;'>Cytb:T=>A</div>	17.78%	L2a	L2a1p		0	0	1219	2	true	false	false	true	36960	98.44	701	99.57
+MT	15626	15626	C	T	transition		Cytb	<div style='white-space:nowrap;'>Cytb:L=>L</div>	97.78%	L2a	L2a1p		0	0	5266	0	true	false	false	false	34	0.09	2	0.28
+MT	15784	15784	T	C	transition	T15784C	Cytb	<div style='white-space:nowrap;'>Cytb:P=>P</div>	100.00%	L2a	L2a1p	POAG - potential for association	316	0	1251	1	true	true	false	true	1146	3.05	631	89.63
+MT	16189	16189	T	C	transition	T16189C	ATT<br>D-Loop<br>HVS1<br>7S DNA	non-coding		L2a	L2a1p	Diabetes / Cardiomyopathy / Endometrial cancer risk / mtDNA copy nbr / Metabolic Syndrome / Melanoma patients	76	0	254	1	true	true	false	true	9210	24.53	327	46.45
+MT	16223	16223	C	T	transition		ATT<br>D-Loop<br>HVS1<br>7S DNA	non-coding		L2a	L2a1p		0	0	287	3	true	false	false	true	13941	37.13	659	93.61
+MT	16278	16278	C	T	transition		ATT<br>D-Loop<br>HVS1<br>7S DNA	non-coding		L2a	L2a1p		0	0	347	1	true	false	false	true	3637	9.69	663	94.18
+MT	16294	16294	C	T	transition		ATT<br>D-Loop<br>HVS1<br>7S DNA	non-coding		L2a	L2a1p		0	0	360	1	true	false	false	true	3548	9.45	637	90.48
+MT	16309	16309	A	G	transition		ATT<br>D-Loop<br>HVS1<br>7S DNA	non-coding		L2a	L2a1p		0	0	374	1	true	false	false	true	972	2.59	486	69.03
+MT	16390	16390	G	A	transition	G16390A	ATT<br>D-Loop<br>7S DNA	non-coding		L2a	L2a1p	POAG - potential for association	317	0	417	1	true	true	false	true	2044	5.44	658	93.47
+
