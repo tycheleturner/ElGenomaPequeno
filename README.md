@@ -139,6 +139,8 @@ gunzip human_g1k_v37.fasta.gz
 wget http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/human_g1k_v37.fasta.fai
 
 cd ElGenomaPequeno
+
+#update config.json as follows:
 {
   "reference": "/home/ec2-user/human_g1k_v37.fasta",
   "data_dir": "/home/ec2-user/",
