@@ -170,6 +170,6 @@ sh run_analysis.sh
 
 ### Example haplogroup map (from 1000 Genomes dataset)
 
-![This plot was made using data from the Diroma et al. 2014 haplogroup dataset (PMID:25077682, Additional File 1)](https://github.com/tycheleturner/ElGenomaPequeno/blob/master/examples/1kg.pdf)
+![This plot was made using data from the Diroma et al. 2014 haplogroup dataset (PMID:25077682, Additional File 1)](https://github.com/tycheleturner/ElGenomaPequeno/blob/master/examples/1kg.pdf "1000GenomesHaplogroups")
 
 
