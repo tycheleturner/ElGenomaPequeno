@@ -66,7 +66,7 @@ map/haplogroup_map.pdf : A world map with all of the samples
 
 ```
 
-**Note: if no haplogroup is identified using mitomaster in the haplogroup workflow, the haplogroup is the same as the rCRS reference sequence (H2a2a1). This is from personal communication with the mitomap help email.**  
+**Note:** if no haplogroup is identified using mitomaster in the haplogroup workflow, the haplogroup is the same as the rCRS reference sequence (H2a2a1). This is from personal communication with the mitomap help email.
 
 
 ### Example setup on a RedHat Linux (may need to ask an system administrator for help if running on your server or alternatively you can set this up in the cloud on a RedHat instance)
