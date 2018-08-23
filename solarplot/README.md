@@ -10,7 +10,7 @@ cat ../variants/*.pysamstats.heteroplasmy.txt | cut -f2 | sort | grep -v 'POS' |
 Rscript combine_with_reference.R -v heteroplasmy.counts.txt -p test -o heteroplasmy.counts.for.plotter.txt
 ```
 
-4. Plot the variants
+3. Plot the variants
 ```
 Rscript solarplot.R -i heteroplasmy.counts.for.plotter.txt -o heteroplasmy.counts.pdf
 ```
