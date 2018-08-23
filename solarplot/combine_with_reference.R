@@ -1,4 +1,4 @@
-#!/bin/Rscrip
+#!/bin/Rscript
 # Tychele N. Turner, Ph.D.
 # August 22, 2018
 # Combine count data with reference allele
