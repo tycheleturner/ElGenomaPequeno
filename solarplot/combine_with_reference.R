@@ -7,8 +7,8 @@ library("optparse")
  
 option_list <- list(
 	make_option(c('-v', '--variant'), action='store', type='character', default='file.txt', help='Variant file created from the variant directory'),
-        make_option(c('-p', '--phenotype'), action='store', type='character', default='all', help='Phenotype name'),
-        make_option(c('-o', '--output'), action='store', type='character', default='output.txt', help='Output file name')
+	make_option(c('-p', '--phenotype'), action='store', type='character', default='all', help='Phenotype name'),
+	make_option(c('-o', '--output'), action='store', type='character', default='output.txt', help='Output file name')
 )
 opt <- parse_args(OptionParser(option_list = option_list))
  

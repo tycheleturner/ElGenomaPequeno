@@ -10,7 +10,7 @@ library("ggplot2")
 
 option_list <- list(
 	make_option(c('-i', '--input_file'), action='store', type='character', default='input.txt', help='This is the input file (tab-delimited) to the program and requires "chr snp    bp	allele	pheno	count"'),
-        make_option(c('-o', '--output_file'), action='store', type='character', default='output.pdf', help='Output file name')
+	make_option(c('-o', '--output_file'), action='store', type='character', default='output.pdf', help='Output file name')
 )
 opt <- parse_args(OptionParser(option_list = option_list))
 
