@@ -24,7 +24,7 @@ rule get_haplogroup:
     input: "{sample}.cns.fq.fasta"
     output: "{sample}.haplogroup.txt"
     params: sge_opts="-l mfree=1G,h_rt=2:00:00 -N get_haplo -cwd"
-    shell: "source deactivate py35 && python mito_master_api.py {input} > {output}"
+    shell: "python mito_master_api3.py {input} > {output}"
 
 rule make_fasta_from_fastq:
     input: "{sample}.cns.fq"
