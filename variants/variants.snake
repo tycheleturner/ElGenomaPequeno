@@ -25,6 +25,7 @@ rule parse_pysamstats:
     output: "{sample}.pysamstats.variants.txt", "{sample}.pysamstats.heteroplasmy.txt"
     params: sge_opts="-l mfree=20G -N pileup_counts -cwd"
     shell: """
+    export PATH=/opt/conda/bin:$PATH
     Rscript parse_pysamstats.R -i {input} -o {output[0]} -v {output[1]} -t {HETEROPLASMY_THRESHOLD}
     """
 
@@ -33,6 +34,7 @@ rule pysamstats:
     output: "{sample}.pysamstats"
     params: sge_opts="-l mfree=20G -N pysamstats -cwd"
     shell: """    
+    export PATH=/opt/conda/bin:$PATH
     pysamstats --fasta {MITO_REF} --type variation {input} > {output}
     """
 
@@ -41,10 +43,12 @@ rule mpileup:
     output: "{sample}.mpileup"
     params: sge_opts="-l mfree=1G,h_rt=2:00:00 -N mpileup -cwd"
     shell: """
+    export PATH=/opt/conda/bin:$PATH &&
     samtools mpileup -f {REFERENCE} {input} > {output}
     """
 
 rule clean:
     shell: """
+    export PATH=/opt/conda/bin:$PATH &&
     rm *.pysamstats
     """

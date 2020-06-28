@@ -27,7 +27,7 @@ rule reheader_bam:
     input: "{sample}.MT.clean.bam"
     output: "{sample}.MT.clean.name.bam"
     params: prefix="{sample}", sge_opts="-l mfree=1G,h_rt=2:00:00 -N rename -cwd"
-    shell: "{PICARD} AddOrReplaceReadGroups INPUT={input} OUTPUT={output} SORT_ORDER=coordinate RGID={params.prefix} RGLB={params.prefix} RGPL=illumina RGPU={params.prefix} RGSM={params.prefix} CREATE_INDEX=true"
+    shell: "export PATH=/opt/conda/bin:$PATH && {PICARD} AddOrReplaceReadGroups INPUT={input} OUTPUT={output} SORT_ORDER=coordinate RGID={params.prefix} RGLB={params.prefix} RGPL=illumina RGPU={params.prefix} RGSM={params.prefix} CREATE_INDEX=true"
 
 rule index_bam:
     input: "{sample}.MT.clean.bam"
@@ -35,6 +35,7 @@ rule index_bam:
     benchmark: "{sample}.index.bam.benchmark"
     params: sge_opts="-l mfree=1G -N index_bam -cwd"
     shell: """
+    export PATH=/opt/conda/bin:$PATH
     samtools index {input}
     """
 
@@ -44,6 +45,7 @@ rule convert_to_bam:
     benchmark: "{sample}.convert.to.bam.benchmark"
     params: sge_opts="-l mfree=2G -N convert_to_bam -cwd"
     shell: """
+    export PATH=/opt/conda/bin:$PATH
     samtools view -Sb {input} > {output}
     """
 
@@ -53,6 +55,7 @@ rule filter_on_greater_than_10_percent_mismatch:
     benchmark: "{sample}.filter.mito.benchmark"
     params: sge_opts="-l mfree=1G -N filter_on_greater_than_10_percent_mismatch -cwd"
     shell: """
+    export PATH=/opt/conda/bin:$PATH &&
     egrep -w 'NM:i:1||NM:i:2||NM:i:3||NM:i:4||NM:i:5||NM:i:6||NM:i:7||NM:i:8||NM:i:9||NM:i:10||NM:i:11||NM:i:12||NM:i:13||NM:i:14||' {input} | grep -v 'NNNNNNNNNN' > {output}
     """
 
@@ -62,11 +65,13 @@ rule extract_mitochondria:
     benchmark: "{sample}.extract.mito.benchmark"
     params: sge_opts="-l mfree=1G -N extract_mitochondria -cwd"
     shell: """
+    export PATH=/opt/conda/bin:$PATH &&
     samtools view -T {REFERENCE} -h {input} {MITONAME} > {output}
     """
 
 rule clean:
     shell: """
+    export PATH=/opt/conda/bin:$PATH
     rm *sam
     rm *.MT.clean.bam
     rm *.MT.clean.bam.bai
