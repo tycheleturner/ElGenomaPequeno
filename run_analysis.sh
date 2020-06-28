@@ -1,18 +1,18 @@
 #!/bin/bash
 
 cd mitobam
-snakemake -s mitobam.snake
-snakemake -s mitobam.snake clean
+/opt/conda/bin/snakemake -s mitobam.snake
+/opt/conda/bin/snakemake -s mitobam.snake clean
 cd ../
 
 cd haplogroup
-snakemake -s haplogroup.snake
-snakemake -s haplogroup.snake clean
+/opt/conda/bin/snakemake -s haplogroup.snake
+/opt/conda/bin/snakemake -s haplogroup.snake clean
 cd ..
 
 cd variants
-snakemake -s variants.snake
-snakemake -s variants.snake clean
+/opt/conda/bin/snakemake -s variants.snake
+/opt/conda/bin/snakemake -s variants.snake clean
 cd ..
 
 cd map
