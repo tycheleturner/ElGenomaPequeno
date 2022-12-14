@@ -6,6 +6,7 @@
 
 # Load libraries
 library("optparse")
+library("tidyverse")
 library("ggplot2")
 
 option_list <- list(
@@ -46,7 +47,7 @@ lines <- data.frame(x = seq(0,16569,by=1),y = 0)
 lines$gene <- addgenelabel(lines$x,lines$gene)
 
 # Plot
-ggplot(mitodata, aes(x = bp,y = logcounts,color = gene)) +
+gg <- ggplot(mitodata, aes(x = bp,y = logcounts,color = gene)) +
 geom_point()+ coord_polar(direction = 1) +
 # the next line adds lines to plot
 geom_line(aes(x,2,color = "red"),data = lines) +
@@ -58,8 +59,9 @@ scale_colour_manual(values = colours,"Genes",breaks = c("Control-Region","tRNA",
 labels = c("Control Region","tRNA","rRNA","Non-Coding","ND1","ND2","CO1","CO2","ATP8","ATP6","CO3","ND3","ND4L","ND4","ND5","ND6","CYB"))+
 xlab("Mitochondrial Base-Pair Location") +
 ylab("log10(counts of variants)") +
-ggtitle("Frequency of mitochondrial variants") +
-layer(geom="text",mapping =aes(x,y,label = x),data = bdries,size=1)
+ggtitle("Frequency of mitochondrial variants")
+#layer(geom="text",mapping =aes(x,y,label = x),data = bdries,size=1)
 
-ggsave(outfile, w=8, h=8, device=pdf)
+ggsave(outfile, plot=gg)
+#ggsave(file=outfile, width=8, height=8)
 
