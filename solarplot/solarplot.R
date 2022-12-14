@@ -2,7 +2,7 @@
 # Mitochondrial solar plots for variant data
 # Adapted from: https://github.com/tidyverse/ggplot2/wiki/Plotting-Mitochondrial-Genetic-Association-Results (received permission from Hadley Wickham to modify his original code before commiting this updated version of the code); also looked at https://github.com/stephenturner/solarplot which is also based on the wiki link above
 # Updated to work with counts by Tychele N. Turner, Ph.D.
-# August 22, 2018
+# Additional updates December 2022
 
 # Load libraries
 library("optparse")
@@ -49,6 +49,7 @@ lines$gene <- addgenelabel(lines$x,lines$gene)
 # Plot
 gg <- ggplot(mitodata, aes(x = bp,y = logcounts,color = gene)) +
 geom_point()+ coord_polar(direction = 1) +
+
 # the next line adds lines to plot
 geom_line(aes(x,2,color = "red"),data = lines) +
 geom_line(aes(x,4,color = "red"),data = lines) +
@@ -60,8 +61,5 @@ labels = c("Control Region","tRNA","rRNA","Non-Coding","ND1","ND2","CO1","CO2","
 xlab("Mitochondrial Base-Pair Location") +
 ylab("log10(counts of variants)") +
 ggtitle("Frequency of mitochondrial variants")
-#layer(geom="text",mapping =aes(x,y,label = x),data = bdries,size=1)
 
 ggsave(outfile, plot=gg)
-#ggsave(file=outfile, width=8, height=8)
-
