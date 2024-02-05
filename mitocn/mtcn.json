@@ -1,0 +1,4 @@
+{
+  "reference": "/path/to/reference/GRCh38_full_analysis_set_plus_decoy_hla.fa",
+  "data_dir" : "/path/to/cram/directory/"
+}

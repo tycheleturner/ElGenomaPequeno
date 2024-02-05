@@ -1,0 +1,72 @@
+import os
+
+#Tychele N. Turner, Ph.D.
+#Snake to assess mitochondrial genome copy number from short-read WGS data
+#Last Update: February 5, 2024
+
+if config == {}:
+    configfile: "mtcn.json"
+
+DATA_DIR = config["data_dir"]
+REFERENCE = config["reference"]
+
+SAMPLES = []
+for file in os.listdir(DATA_DIR):
+    if file.endswith(".final.cram"):
+        SAMPLES.append(str(file).split('.final.cram')[0])
+print(SAMPLES)
+
+rule all:
+    input: expand("%s/{sample}.final.cram" % DATA_DIR, sample = SAMPLES), expand("{sample}.chr1.average.depth.txt.gz", sample = SAMPLES), expand("{sample}.mt.average.depth.txt.gz", sample = SAMPLES)
+    params: sge_opts="-l mfree=20G -N run_all"
+
+rule chr1_cn:
+    input: "%s/{sample}.final.cram" % DATA_DIR
+    output: "{sample}.chr1.average.depth.txt.gz"
+    params: prefix="{sample}"
+    shell: """
+    
+    export PATH=/opt/conda/bin:$PATH
+
+    samtools view -T {REFERENCE} -hb {input} chr1 | samtools depth -d 0 -a - > {params.prefix}.chr1.depth.txt
+    cut -f3 {params.prefix}.chr1.depth.txt | awk -f stats.awk - | grep 'ean' > {params.prefix}.chr1.average.depth.txt
+
+    gzip {params.prefix}.chr1.depth.txt
+    gzip {params.prefix}.chr1.average.depth.txt
+    ls {output}
+    """
+
+rule mitochondria_cn:
+    input: "%s/{sample}.final.cram" % DATA_DIR
+    output: "{sample}.mt.average.depth.txt.gz"
+    params: prefix="{sample}"
+    shell: """
+
+    export PATH=/opt/conda/bin:$PATH    
+
+    samtools view -T {REFERENCE} -h {input} chrM > {params.prefix}.MT.sam
+    
+    egrep -w 'NM:i:1||NM:i:2||NM:i:3||NM:i:4||NM:i:5||NM:i:6||NM:i:7||NM:i:8||NM:i:9||NM:i:10||NM:i:11||NM:i:12||NM:i:13||NM:i:14||' {params.prefix}.MT.sam | grep -v 'NNNNNNNNNN' > {params.prefix}.MT.clean.sam
+    
+    samtools view -Sb {params.prefix}.MT.clean.sam > {params.prefix}.MT.clean.bam
+    samtools index {params.prefix}.MT.clean.bam
+
+    picard AddOrReplaceReadGroups INPUT={params.prefix}.MT.clean.bam OUTPUT={params.prefix}.MT.clean.name.bam SORT_ORDER=coordinate RGID={params.prefix} RGLB={params.prefix} RGPL=illumina RGPU={params.prefix} RGSM={params.prefix} CREATE_INDEX=true
+    samtools index {params.prefix}.MT.clean.name.bam 
+    
+    samtools depth -d 0 -a {params.prefix}.MT.clean.name.bam > {params.prefix}.mt.depth.txt
+    cut -f3 {params.prefix}.mt.depth.txt | awk -f stats.awk - | grep 'ean' > {params.prefix}.mt.average.depth.txt
+
+    gzip {params.prefix}.mt.depth.txt
+    gzip {params.prefix}.mt.average.depth.txt
+    ls {output}
+
+    rm {params.prefix}.MT.sam
+    rm {params.prefix}.MT.clean.sam
+    rm {params.prefix}.MT.clean.bam
+    rm {params.prefix}.MT.clean.bam.bai
+    rm {params.prefix}.MT.clean.name.bam
+    rm {params.prefix}.MT.clean.name.bam.bai
+    rm {params.prefix}.MT.clean.name.bai
+    """
+
