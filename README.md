@@ -179,3 +179,7 @@ sh run_analysis.sh
 ![This plot was made using data from the Diroma et al. 2014 haplogroup dataset (PMID:25077682, Additional File 1)](examples/1kg.png "1000GenomesHaplogroups")
 
 
+### Mitochondrial Genome Copy Number from Short-Read WGS
+A standalone snake has been added for calcuating copy number from the mitochondrial genome.
+
+
