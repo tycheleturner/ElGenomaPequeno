@@ -180,6 +180,6 @@ sh run_analysis.sh
 
 
 ### Mitochondrial Genome Copy Number from Short-Read WGS
-A standalone snake has been added for calcuating copy number from the mitochondrial genome.
+A standalone snake has been added for calcuating copy number from the mitochondrial genome. Please see the `mitocn` directory for more details.
 
 
