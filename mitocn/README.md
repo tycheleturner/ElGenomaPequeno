@@ -10,5 +10,5 @@ snakemake -s mtcn.snake
 After the run, calculate the copy number:
 ```
 Rscript mito_cn.R
-``
+```
 
