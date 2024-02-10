@@ -1,4 +1,4 @@
-# El genoma pequeño - analysis workflow for "the little genome"
+# EGP: El genoma pequeño - analysis workflow for "the little genome"
 ### Note: the character ``` ñ ``` is not supported in Github repository names at this time
 
 The mitochondrial workflows in this github have a few purposes. First is to get a high quality mitochondrial genome out of an Illumina sequencing bam or cram file (this workflow assumes this bam/cram was initially mapped to a reference using BWA MEM). Second is to get a representative fasta for the mitochondrial genome and to use Mitomaster to determine its haplogroup. Third is to collect variants from the mitochondria including those which meet some minimum threshold for being a heteroplasmic variant. Finally, it generates a world map with your sample(s) mapped to the location where their haplogroup is thought to have been derived in the world. To generate coordinates, I approximated based on looking at the following map: https://www.mitomap.org/foswiki/pub/MITOMAP/MitomapFigures/WorldMigrations2012.pdf. 
