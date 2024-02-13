@@ -8,9 +8,8 @@ We highly suggest some other analyses for family-based studies such as taking al
 ### Overall Workflow
 ![EGP Workflow](workflow/EGP_Website.png)
 
-Requirements:
+### Requirements:
 ```
-
 samtools
 python
 pysam
@@ -21,13 +20,11 @@ picard
 R package: seqinr
 R package: optparse
 Python package: biopython
-
 ```
 
 Users will want to set up the config.json to point to the required information
 
 ```
-
 reference: path to the reference that was used for generating the BAM/CRAM
 data_dir: path to the BAM/CRAM file
 file_tail: end of BAM/CRAM file name (for example if your file is named sample1.final.cram this would be .final.cram)
@@ -36,26 +33,21 @@ java: path to the jre1.8.0_65/bin/java
 mitoname: The name of the mito as in the file (chrM or MT)
 mitobam_dir: this is fixed (do not change)
 mito_ref: path to the mitochondrial reference genome the human MT and chrM are located in the github at reference/chrM.fasta
-
 ```
 
-To run the analysis locally
+### To run the analysis locally
 
 ```
-
 sh run_analysis.sh
-
 ```
 
-To submit to cluster
+### To submit to cluster
 
 ```
-
 sh cluster_analysis.sh
-
 ```
 
-Output files:
+### Output files:
 
 ```
 haplogroup/sample.fasta.for.mega : One fasta file for each sample (can be loaded into MEGA for tree building)
@@ -66,7 +58,6 @@ mitobam/sample.MT.clean.name.bam.bai : One bai file for each sample
 variants/sample.pysamstats.heteroplasmy.txt : One heteroplasmy site file per person
 variants/sample.pysamstats.variants.txt : One variant site file per person
 map/haplogroup_map.pdf : A world map with all of the samples 
-
 ```
 
 **Note:** if no haplogroup is identified using mitomaster in the haplogroup workflow, the haplogroup is the same as the rCRS reference sequence (H2a2a1). This is from personal communication with the mitomap help email.
@@ -130,9 +121,7 @@ source activate py35
 ```
 #get the data (low pass WGS)
 wget ftp://ftp-trace.ncbi.nih.gov/1000genomes/ftp/phase3/data/NA19238/alignment/NA19238.mapped.ILLUMINA.bwa.YRI.low_coverage.20130415.bam.cram
-
 wget ftp://ftp-trace.ncbi.nih.gov/1000genomes/ftp/phase3/data/NA19240/alignment/NA19240.mapped.ILLUMINA.bwa.YRI.low_coverage.20130415.bam.cram
-
 wget ftp://ftp-trace.ncbi.nih.gov/1000genomes/ftp/phase3/data/NA19239/alignment/NA19239.mapped.ILLUMINA.bwa.YRI.low_coverage.20130415.bam.cram
 
 #index crams
@@ -162,7 +151,6 @@ cd ElGenomaPequeno
 }
 
 sh run_analysis.sh
-
 ```
 
 ### Workflows inside of this github
