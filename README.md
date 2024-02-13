@@ -5,6 +5,9 @@ The mitochondrial workflows in this github have a few purposes. First is to get 
 
 We highly suggest some other analyses for family-based studies such as taking all of the fastas and generating a multi-sequence alignment and tree (they are not currently implemented in this github). The workflows in this github run in ~ 2 minutes per sample.
 
+### Overall Workflow
+![EGP Workflow](workflow/EGP_Website.png)
+
 Requirements:
 ```
 
