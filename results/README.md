@@ -6,7 +6,7 @@ Links to Results of Our Analyses of Public Datasets Using EGP
 
 - [ ] Simons Genome Diversity Project: Short-read WGS CRAM files were downloaded from the EMBL-EBI Public Data Globus Endpoint from the `/1000g/ftp/data_collections` directory. Post-download, the data was run through EGP version 1.3.
 
-| Public Dataset | Result File Type | Result File Link |
+| Public Dataset | EGP Result File Type | EGP Result File Link |
 | :---: | :---: | :---: |
 | Simons Genome Diversity Project | Mitochondrial Genome Fasta Files for MEGA | https://data.cyverse.org/dav-anon/iplant/home/tycheleturner/EGP/SGDP/mtgenome_fasta.tar.bz2 | 
 | Simons Genome Diversity Project | Mitochondrial Genome MitoMaster Result File | https://data.cyverse.org/dav-anon/iplant/home/tycheleturner/EGP/SGDP/haplogroups.tar.bz2 |
