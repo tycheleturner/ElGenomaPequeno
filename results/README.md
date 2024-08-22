@@ -2,9 +2,9 @@
 ### Tychele N. Turner, Ph.D.
 ### Last Update: August 21, 2024
 
-Links to Results of Our Analyses of Public Datasets Using EGP
+#### Links to Results of Our Analyses of Public Datasets Using EGP
 
-- [ ] Simons Genome Diversity Project: Short-read WGS CRAM files were downloaded from the EMBL-EBI Public Data Globus Endpoint from the `/1000g/ftp/data_collections` directory. Post-download, the data was run through EGP version 1.3.
+- [ ] **Simons Genome Diversity Project**: Short-read WGS CRAM files were downloaded from the EMBL-EBI Public Data Globus Endpoint from the `/1000g/ftp/data_collections` directory. Post-download, the data was run through EGP version 1.3.
 
 | Public Dataset | EGP Result File Type | EGP Result File Link |
 | :---: | :---: | :---: |
