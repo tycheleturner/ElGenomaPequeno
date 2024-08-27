@@ -6,7 +6,7 @@
 
 - [ ] **Simons Genome Diversity Project**: Short-read WGS CRAM files were downloaded from the EMBL-EBI Public Data Globus Endpoint from the `/1000g/ftp/data_collections` directory. Post-download, the data was run through EGP version 1.3.
 - [ ] **Human Genome Diversity Project**: Short-read WGS CRAM files were downloaded from the EMBL-EBI Public Data Globus Endpoint from the `/1000g/ftp/data_collections` directory. Post-download, the data was run through EGP version 1.3.
-
+- [ ] **Gambian Genome Variation Project**: Short-read WGS CRAM files were downloaded from the EMBL-EBI Public Data Globus Endpoint from the `/1000g/ftp/data_collections` directory. Post-download, the data was run through EGP version 1.3.
 
 | Public Dataset | EGP Result File Type | EGP Result File Link | MD5 |
 | :---: | :---: | :---: | :---: |
@@ -18,4 +18,8 @@
 | Human Genome Diversity Project | Mitochondrial Genome MitoMaster Result File | https://data.cyverse.org/dav-anon/iplant/home/tycheleturner/EGP/HGDP/haplogroups.tar.bz2 | 50b80ed32b1ae542c8967cc31986dd19 |
 | Human Genome Diversity Project | Mitochondrial Genome Variant Tables | https://data.cyverse.org/dav-anon/iplant/home/tycheleturner/EGP/HGDP/variant_tables.tar.bz2 | 995f30b74c4bb094a674b1a994853246 |
 | Human Genome Diversity Project | Mitochondrial Genome Copy Number | https://data.cyverse.org/dav-anon/iplant/home/tycheleturner/EGP/HGDP/HGDP_mitochondrial_copy_numbers.txt.gz | e79e61efab4c491fa2825b7d1853df58 |
+| Gambian Genome Variation Project | Mitochondrial Genome Fasta Files for MEGA | https://data.cyverse.org/dav-anon/iplant/home/tycheleturner/EGP/GGVP/mtgenome_fasta.tar.bz2 | d21e1e91e8b4c00627171fae79a1f54d |
+| Gambian Genome Variation Project | Mitochondrial Genome MitoMaster Result File | https://data.cyverse.org/dav-anon/iplant/home/tycheleturner/EGP/GGVP/haplogroups.tar.bz2 | b359d1068d4f84f7746d1ebde82df29a |
+| Gambian Genome Variation Project | Mitochondrial Genome Variant Tables | https://data.cyverse.org/dav-anon/iplant/home/tycheleturner/EGP/GGVP/variant_tables.tar.bz | ee2b93aa93d2177d92ec0f8f308b43ed |
+| Gambian Genome Variation Project | Mitochondrial Genome Copy Number | https://data.cyverse.org/dav-anon/iplant/home/tycheleturner/EGP/GGVP/GGVP_mitochondrial_copy_numbers.txt.gz | fda509ba1d2bf33fd2d6b77b92e76c03 |
 
