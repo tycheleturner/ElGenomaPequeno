@@ -5,9 +5,9 @@
 
 #### Links to Results of Our Analyses of Public Datasets Using EGP
 
-- [ ] **Simons Genome Diversity Project**: Short-read WGS CRAM files were downloaded from the EMBL-EBI Public Data Globus Endpoint from the `/1000g/ftp/data_collections` directory. Post-download, the data was run through EGP version 1.3.
-- [ ] **Human Genome Diversity Project**: Short-read WGS CRAM files were downloaded from the EMBL-EBI Public Data Globus Endpoint from the `/1000g/ftp/data_collections` directory. Post-download, the data was run through EGP version 1.3.
-- [ ] **Gambian Genome Variation Project**: Short-read WGS CRAM files were downloaded from the EMBL-EBI Public Data Globus Endpoint from the `/1000g/ftp/data_collections` directory. Post-download, the data was run through EGP version 1.3.
+- [x] **Simons Genome Diversity Project**: Short-read WGS CRAM files were downloaded from the EMBL-EBI Public Data Globus Endpoint from the `/1000g/ftp/data_collections` directory. Post-download, the data was run through EGP version 1.3.
+- [x] **Human Genome Diversity Project**: Short-read WGS CRAM files were downloaded from the EMBL-EBI Public Data Globus Endpoint from the `/1000g/ftp/data_collections` directory. Post-download, the data was run through EGP version 1.3.
+- [x] **Gambian Genome Variation Project**: Short-read WGS CRAM files were downloaded from the EMBL-EBI Public Data Globus Endpoint from the `/1000g/ftp/data_collections` directory. Post-download, the data was run through EGP version 1.3.
 
 | Public Dataset | EGP Result File Type | EGP Result File Link | MD5 |
 | :---: | :---: | :---: | :---: |
