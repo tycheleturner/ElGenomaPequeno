@@ -1,6 +1,6 @@
 ### Results for Public Datasets Run Through EGP
 ### Tychele N. Turner, Ph.D.
-### Last Update: August 26, 2024
+### Last Update: September 10, 2024
 ### Here we provide the results of running EGP only on publicly available genomic datasets. 
 
 #### Links to Results of Our Analyses of Public Datasets Using EGP
