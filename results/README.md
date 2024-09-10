@@ -8,7 +8,7 @@
 - [x] **Simons Genome Diversity Project**: Short-read WGS CRAM files were downloaded from the EMBL-EBI Public Data Globus Endpoint from the `/1000g/ftp/data_collections` directory. Post-download, the data was run through EGP version 1.3.
 - [x] **Human Genome Diversity Project**: Short-read WGS CRAM files were downloaded from the EMBL-EBI Public Data Globus Endpoint from the `/1000g/ftp/data_collections` directory. Post-download, the data was run through EGP version 1.3.
 - [x] **Gambian Genome Variation Project**: Short-read WGS CRAM files were downloaded from the EMBL-EBI Public Data Globus Endpoint from the `/1000g/ftp/data_collections` directory. Post-download, the data was run through EGP version 1.3.
-- [ ] **1000 Genomes Project 698 Related**: Short-read WGS CRAM files were downloaded through the paths present in this file `https://ftp-trace.ncbi.nlm.nih.gov/1000genomes/ftp/1000G_2504_high_coverage/additional_698_related/1000G_698_related_high_coverage.sequence.index`.
+- [x] **1000 Genomes Project 698 Related**: Short-read WGS CRAM files were downloaded through the paths present in this file `https://ftp-trace.ncbi.nlm.nih.gov/1000genomes/ftp/1000G_2504_high_coverage/additional_698_related/1000G_698_related_high_coverage.sequence.index`.
 
 | Public Dataset | EGP Result File Type | EGP Result File Link | MD5 |
 | :---: | :---: | :---: | :---: |
@@ -24,4 +24,7 @@
 | Gambian Genome Variation Project | Mitochondrial Genome MitoMaster Result File | https://data.cyverse.org/dav-anon/iplant/home/tycheleturner/EGP/GGVP/haplogroups.tar.bz2 | b359d1068d4f84f7746d1ebde82df29a |
 | Gambian Genome Variation Project | Mitochondrial Genome Variant Tables | https://data.cyverse.org/dav-anon/iplant/home/tycheleturner/EGP/GGVP/variant_tables.tar.bz | ee2b93aa93d2177d92ec0f8f308b43ed |
 | Gambian Genome Variation Project | Mitochondrial Genome Copy Number | https://data.cyverse.org/dav-anon/iplant/home/tycheleturner/EGP/GGVP/GGVP_mitochondrial_copy_numbers.txt.gz | fda509ba1d2bf33fd2d6b77b92e76c03 |
-
+| 1000G 698 | Mitochondrial Genome Fasta Files for MEGA | https://data.cyverse.org/dav-anon/iplant/home/tycheleturner/EGP/KG/KIDS/mtgenome_fasta.tar.bz2 | 322038d61b4da2e937b32410613c3532 |
+| 1000G 698 | Mitochondrial Genome MitoMaster Result File | https://data.cyverse.org/dav-anon/iplant/home/tycheleturner/EGP/KG/KIDS/haplogroups.tar.bz2 | 36c782c12245100478903f7fa191a402 |
+| 1000G 698 | Mitochondrial Genome Variant Tables | https://data.cyverse.org/dav-anon/iplant/home/tycheleturner/EGP/KG/KIDS/variant_tables.tar.bz2 | 68b2a51361ffae4e7ad9d420b8becd38 |
+| 1000G 698 | Mitochondrial Genome Copy Number | https://data.cyverse.org/dav-anon/iplant/home/tycheleturner/EGP/KG/KIDS/KG_698_mitochondrial_copy_numbers.txt.gz |1e83c8ae132b0a7ef33b090757b29063 |
