@@ -12,21 +12,12 @@
 - [ ] **1000 Genomes Project 2504**: Short-read WGS CRAM files were downloaded through the paths present in this file `https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000G_2504_high_coverage/1000G_2504_high_coverage.sequence.index`. Please note that the index files are there as well. You just have to append a `.crai`.
 - [ ] **GIAB Trio**: Short-read WGS CRAM files were downloaded through the paths present in this file `https://raw.githubusercontent.com/genome-in-a-bottle/giab_data_indexes/refs/heads/master/AshkenazimTrio/alignment.index.AJtrio_Illumina300X_wgs_novoalign_GRCh37_GRCh38_NHGRI_07282015`.
 
-| Public Dataset | EGP Result File Type | EGP Result File Link | MD5 |
-| :---: | :---: | :---: | :---: |
-| Simons Genome Diversity Project | Mitochondrial Genome Fasta Files for MEGA | https://data.cyverse.org/dav-anon/iplant/home/tycheleturner/EGP/SGDP/mtgenome_fasta.tar.bz2 | 86b09553f80926c1c29c57000ec1a88f | 
-| Simons Genome Diversity Project | Mitochondrial Genome MitoMaster Result File | https://data.cyverse.org/dav-anon/iplant/home/tycheleturner/EGP/SGDP/haplogroups.tar.bz2 | 010026d77bee81e7b8daf5836bd12da3 |
-| Simons Genome Diversity Project | Mitochondrial Genome Variant Tables | https://data.cyverse.org/dav-anon/iplant/home/tycheleturner/EGP/SGDP/variant_tables.tar.bz2 | f1ea3edf4a82b42f2028467fb3544dc4 |
-| Simons Genome Diversity Project | Mitochondrial Genome Copy Number | https://data.cyverse.org/dav-anon/iplant/home/tycheleturner/EGP/SGDP/SGDP_mitochondrial_copy_numbers.txt.gz | 4872eeb792c214ad49662e98e4b14620 |
-| Human Genome Diversity Project | Mitochondrial Genome Fasta Files for MEGA | https://data.cyverse.org/dav-anon/iplant/home/tycheleturner/EGP/HGDP/mtgenome_fasta.tar.bz2 | 2b388c1fa446ecec70e33ea0471e06f8 |
-| Human Genome Diversity Project | Mitochondrial Genome MitoMaster Result File | https://data.cyverse.org/dav-anon/iplant/home/tycheleturner/EGP/HGDP/haplogroups.tar.bz2 | 50b80ed32b1ae542c8967cc31986dd19 |
-| Human Genome Diversity Project | Mitochondrial Genome Variant Tables | https://data.cyverse.org/dav-anon/iplant/home/tycheleturner/EGP/HGDP/variant_tables.tar.bz2 | 995f30b74c4bb094a674b1a994853246 |
-| Human Genome Diversity Project | Mitochondrial Genome Copy Number | https://data.cyverse.org/dav-anon/iplant/home/tycheleturner/EGP/HGDP/HGDP_mitochondrial_copy_numbers.txt.gz | e79e61efab4c491fa2825b7d1853df58 |
-| Gambian Genome Variation Project | Mitochondrial Genome Fasta Files for MEGA | https://data.cyverse.org/dav-anon/iplant/home/tycheleturner/EGP/GGVP/mtgenome_fasta.tar.bz2 | d21e1e91e8b4c00627171fae79a1f54d |
-| Gambian Genome Variation Project | Mitochondrial Genome MitoMaster Result File | https://data.cyverse.org/dav-anon/iplant/home/tycheleturner/EGP/GGVP/haplogroups.tar.bz2 | b359d1068d4f84f7746d1ebde82df29a |
-| Gambian Genome Variation Project | Mitochondrial Genome Variant Tables | https://data.cyverse.org/dav-anon/iplant/home/tycheleturner/EGP/GGVP/variant_tables.tar.bz | ee2b93aa93d2177d92ec0f8f308b43ed |
-| Gambian Genome Variation Project | Mitochondrial Genome Copy Number | https://data.cyverse.org/dav-anon/iplant/home/tycheleturner/EGP/GGVP/GGVP_mitochondrial_copy_numbers.txt.gz | fda509ba1d2bf33fd2d6b77b92e76c03 |
-| 1000G 698 | Mitochondrial Genome Fasta Files for MEGA | https://data.cyverse.org/dav-anon/iplant/home/tycheleturner/EGP/KG/KIDS/mtgenome_fasta.tar.bz2 | 322038d61b4da2e937b32410613c3532 |
-| 1000G 698 | Mitochondrial Genome MitoMaster Result File | https://data.cyverse.org/dav-anon/iplant/home/tycheleturner/EGP/KG/KIDS/haplogroups.tar.bz2 | 36c782c12245100478903f7fa191a402 |
-| 1000G 698 | Mitochondrial Genome Variant Tables | https://data.cyverse.org/dav-anon/iplant/home/tycheleturner/EGP/KG/KIDS/variant_tables.tar.bz2 | 68b2a51361ffae4e7ad9d420b8becd38 |
-| 1000G 698 | Mitochondrial Genome Copy Number | https://data.cyverse.org/dav-anon/iplant/home/tycheleturner/EGP/KG/KIDS/KG_698_mitochondrial_copy_numbers.txt.gz |1e83c8ae132b0a7ef33b090757b29063 |
+| Public Dataset | Zenodo DOI |
+| :---: | :---: |
+| Simons Genome Diversity Project | [https://doi.org/10.5281/zenodo.13835663](https://doi.org/10.5281/zenodo.13835663)|
+| Human Genome Diversity Project | |
+| Gambian Genome Variation Project | |
+| 1000G 698 | |
+| 1000G 2504 | |
+| GIAB Trio | |
+
