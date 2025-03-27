@@ -169,6 +169,8 @@ sh run_analysis.sh
 
 ![This plot was made using data from the Diroma et al. 2014 haplogroup dataset (PMID:25077682, Additional File 1)](examples/1kg.png "1000GenomesHaplogroups")
 
+### EGP Results on Public WGS Datasets
+Please see the [results](results/README.md) for links to EGP callsets we have generated on public whole-genome sequencing datasets.
 
 ### Mitochondrial Genome Copy Number from Short-Read WGS
 A standalone snake has been added for calculating copy number from the mitochondrial genome. Please see the `mitocn` directory for more details.
