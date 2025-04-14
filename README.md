@@ -170,7 +170,16 @@ sh run_analysis.sh
 ![This plot was made using data from the Diroma et al. 2014 haplogroup dataset (PMID:25077682, Additional File 1)](examples/1kg.png "1000GenomesHaplogroups")
 
 ### EGP Results on Public WGS Datasets
-Please see the [results](results/README.md) for links to EGP callsets we have generated on public whole-genome sequencing datasets.
+Please see the [results](results/README.md) for detailed information on EGP callsets we have generated on public whole-genome sequencing datasets. A shortened version of this information is below:
+
+| Public Dataset | Zenodo Link |
+| :---: | :---: |
+| Simons Genome Diversity Project )| [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13835663.svg)](https://doi.org/10.5281/zenodo.13835663) |
+| Human Genome Diversity Project | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13835739.svg)](https://doi.org/10.5281/zenodo.13835739) |
+| Gambian Genome Variation Project | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13839400.svg)](https://doi.org/10.5281/zenodo.13839400) |
+| 1000G 698 | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13839442.svg)](https://doi.org/10.5281/zenodo.13839442) |
+| 1000G 2504 | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13839949.svg)](https://doi.org/10.5281/zenodo.13839949) |
+| GIAB Trio | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13839913.svg)](https://doi.org/10.5281/zenodo.13839913) |
 
 ### Mitochondrial Genome Copy Number from Short-Read WGS
 A standalone snake has been added for calculating copy number from the mitochondrial genome. Please see the `mitocn` directory for more details.
