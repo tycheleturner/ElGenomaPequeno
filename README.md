@@ -174,7 +174,7 @@ Please see the [results](results/README.md) for detailed information on EGP call
 
 | Public Dataset | Zenodo Link |
 | :---: | :---: |
-| Simons Genome Diversity Project )| [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13835663.svg)](https://doi.org/10.5281/zenodo.13835663) |
+| Simons Genome Diversity Project | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13835663.svg)](https://doi.org/10.5281/zenodo.13835663) |
 | Human Genome Diversity Project | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13835739.svg)](https://doi.org/10.5281/zenodo.13835739) |
 | Gambian Genome Variation Project | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13839400.svg)](https://doi.org/10.5281/zenodo.13839400) |
 | 1000G 698 | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13839442.svg)](https://doi.org/10.5281/zenodo.13839442) |
