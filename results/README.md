@@ -12,7 +12,7 @@
 - [x] **1000 Genomes Project 2504**: Short-read WGS CRAM files were downloaded through the paths present in this file `https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000G_2504_high_coverage/1000G_2504_high_coverage.sequence.index`. Please note that the index files are there as well. You just have to append a `.crai`. Post-download, the data was run through EGP version 1.3.
 - [x] **GIAB Trio**: Short-read WGS CRAM files were downloaded through the paths present in this file `https://raw.githubusercontent.com/genome-in-a-bottle/giab_data_indexes/refs/heads/master/AshkenazimTrio/alignment.index.AJtrio_Illumina300X_wgs_novoalign_GRCh37_GRCh38_NHGRI_07282015`. Post-download, the data was run through EGP version 1.3.
 
-| Public Dataset | Zenodo DOI |
+| Public Dataset | Zenodo DOI | Zenodo Link |
 | :---: | :---: | :---: |
 | Simons Genome Diversity Project | [https://doi.org/10.5281/zenodo.13835663](https://doi.org/10.5281/zenodo.13835663)| [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13835663.svg)](https://doi.org/10.5281/zenodo.13835663) |
 | Human Genome Diversity Project |[https://doi.org/10.5281/zenodo.13835739](https://doi.org/10.5281/zenodo.13835739) | |
