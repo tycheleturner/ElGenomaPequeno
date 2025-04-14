@@ -15,9 +15,9 @@
 | Public Dataset | Zenodo DOI | Zenodo Link |
 | :---: | :---: | :---: |
 | Simons Genome Diversity Project | [https://doi.org/10.5281/zenodo.13835663](https://doi.org/10.5281/zenodo.13835663)| [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13835663.svg)](https://doi.org/10.5281/zenodo.13835663) |
-| Human Genome Diversity Project |[https://doi.org/10.5281/zenodo.13835739](https://doi.org/10.5281/zenodo.13835739) | |
-| Gambian Genome Variation Project | [https://doi.org/10.5281/zenodo.13839400](https://doi.org/10.5281/zenodo.13839400) | |
-| 1000G 698 | [https://doi.org/10.5281/zenodo.13839442](https://doi.org/10.5281/zenodo.13839442) | |
-| 1000G 2504 | [https://doi.org/10.5281/zenodo.13839949](https://doi.org/10.5281/zenodo.13839949) | |
-| GIAB Trio | [https://doi.org/10.5281/zenodo.13839913](https://doi.org/10.5281/zenodo.13839913) | |
+| Human Genome Diversity Project |[https://doi.org/10.5281/zenodo.13835739](https://doi.org/10.5281/zenodo.13835739) | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13835739.svg)](https://doi.org/10.5281/zenodo.13835739) |
+| Gambian Genome Variation Project | [https://doi.org/10.5281/zenodo.13839400](https://doi.org/10.5281/zenodo.13839400) | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13839400.svg)](https://doi.org/10.5281/zenodo.13839400) |
+| 1000G 698 | [https://doi.org/10.5281/zenodo.13839442](https://doi.org/10.5281/zenodo.13839442) | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13839442.svg)](https://doi.org/10.5281/zenodo.13839442) |
+| 1000G 2504 | [https://doi.org/10.5281/zenodo.13839949](https://doi.org/10.5281/zenodo.13839949) | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13839949.svg)](https://doi.org/10.5281/zenodo.13839949)|
+| GIAB Trio | [https://doi.org/10.5281/zenodo.13839913](https://doi.org/10.5281/zenodo.13839913) | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13839913.svg)](https://doi.org/10.5281/zenodo.13839913)|
 
